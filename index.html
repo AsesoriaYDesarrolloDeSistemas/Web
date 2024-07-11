@@ -3,32 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+    <title>Asesoria y Desarrollo de Sistemas - Inicio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <!-- Barra de Contacto -->
     <div class="contact-bar">
-        <span >victorr_nahuat@hotmail.com</span>
+        <span>Email: victorr_nahuat@hotmail.com</span>
         <span>Teléfono: +52 999 123 4567</span>
     </div>
 
     <!-- Barra de Navegación -->
     <nav class="navbar">
-        <div class="navbar-title">Asesoría y Desarrollo de Sistemas</div>
+        <div class="navbar-title">
+            <img src="https://raw.githubusercontent.com/bictorrrr/Links_Recursos/main/Web/logo.jpg" alt="Logo" class="navbar-logo">
+            Asesoría y Desarrollo de Sistemas
+        </div>
         <ul class="navbar-links">
-            <li class="btn"><a href="#about">Sobre Nosotros</a></li>
-            <li class="btn"><a href="#services">Servicios</a></li>
-            <li class="btn"><a href="#contact">Contacto</a></li>
+            <a href="#Nosotros"><li class="btn">Nosotros</li></a>
+            <a href="#Servicios"><li class="btn">Servicios</li></a>
+            <a href="#Testimonios"><li class="btn">Testimonios</li></a>
+            <a href="#Contacto"><li class="btn">Contacto</li></a>
         </ul>
     </nav>
 
     <div class="container">
-        <h1 id="greeting">¡Bienvenido!</h1>
+        <h1 id="greeting">Capacitacion y Soporte tecnico inmediato para todos nuestros Software</h1>
         <p id="date"></p>
         <p id="time"></p>
     </div>
+
+    <!-- Sección de Servicios -->
+    <section id="Servicios" class="section">
+        <h2>--------------</h2>
+        <h2>Servicios</h2>
+        <div class="services-container">
+            <div class="card">
+                <p class="heading">
+                    Desarrollo de Software
+                </p>
+                <p>
+                    Creación de aplicaciones a medida para satisfacer tus necesidades.
+                </p>
+                <p>✔️
+                </p></div>
+            <div class="card">
+                <p class="heading">
+                    Consultoría
+                </p>
+                <p>
+                    Asesoría experta para optimizar tus procesos y sistemas.
+                </p>
+                <p>✔️
+                </p></div>
+            <div class="card">
+                <p class="heading">
+                    Servicio Tecnico
+                </p>
+                <p>
+                    Soluciones rápidas y efectivas para tus problemas técnicos.
+                </p>
+                <p>✔️
+                </p></div>
+        </div>
+    </section>
+
+    <!-- Sección "Sobre Nosotros" -->
+    <section id="Nosotros" class="section">
+        <h2>--------------</h2>
+        <h2>Sobre Nosotros</h2>
+        <p class="nosotros">Somos una empresa dedicada a ofrecer soluciones tecnológicas innovadoras. Nuestro objetivo es ayudar a nuestros clientes a alcanzar el éxito a través del uso de la tecnología.</p>
+    </section>
+
+    <!-- Sección de Testimonios -->
+    <section id="Testimonios" class="section">
+        <h2>Testimonios</h2>
+        <div class="testimonial">
+            <p>"La mejor experiencia trabajando con esta empresa. Su profesionalismo y calidad son incomparables."</p>
+            <span>- Cliente Satisfecho</span>
+        </div>
+        <div class="testimonial">
+            <p>"Excelente servicio y soporte técnico. Resolvieron todos nuestros problemas rápidamente."</p>
+            <span>- Otro Cliente Satisfecho</span>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="Contacto" class="section">
+        <h2>--------------</h2>
+        <h2>Contacto</h2>
+        <form action="https://example.com/form-handler" method="post">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
     <script src="script.js"></script>
 </body>
 </html>
