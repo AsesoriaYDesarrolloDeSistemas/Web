@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #fff;
+    color: #fff;
+}
+/* Boton*/
+.btn {
+    font-size: 17px;
+    background: transparent;
+    border: none;
+    padding: 1em 1.5em;
+    color: #ffedd3;
+    text-transform: uppercase;
+    position: relative;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: #ffc506;
+    transition: 0.5s ease;
+}
+
+.btn:hover {
+    color: #1e1e2b;
+    transition-delay: 0.5s;
+}
+
+.btn:hover::before {
+    width: 100%;
+}
+
+.btn::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    width: 100%;
+    background-color: #ffc506;
+    transition: 0.4s ease;
+    z-index: -1;
+}
+
+.btn:hover::after {
+    height: 100%;
+    transition-delay: 0.4s;
+    color: aliceblue;
+}
+
+
+/* Barra de Contacto */
+.contact-bar {
+    background-color: #ffbb5c;
+    color: #fff;
+    padding: 5px 20px;
+    text-align: center;
+    font-size: 14px;
+    margin: 0; /* Asegura que no haya margen */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
+    position: fixed; /* Fija la barra en la parte superior */
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Asegura que esté por encima del contenido */
+    text-align: left;
+}
+
+/* Barra de Navegación */
+.navbar {
+    background-color: #fc3333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 20px; /* Ajusta la posición superior debajo de la barra de contacto */
+    z-index: 999; /* Debajo de la barra de contacto */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
+    margin: 0; /* Asegura que no haya margen */
+}
+
+.navbar-title {
+    font-size: 20px;
+    font-weight: bold;
+    white-space: nowrap; /* Evita que el título se divida en múltiples líneas */
+}
+
+.navbar-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en múltiples líneas si es necesario */
+}
+
+.navbar-links li {
+    margin-left: 10px; /* Reduce el margen entre los elementos */
+}
+
+.navbar-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar-links a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    text-align: center;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 80px; /* Ajuste para dejar espacio para la barra de contacto y la barra de navegación */
+}
+
+h1 {
+    color: #fff;
+}
+
+p {
+    color: #ddd;
+}
